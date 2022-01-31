@@ -29,7 +29,7 @@
         "spi2", 
         "usart1", 
         "usart2", 
-        "usart3_usart4_lpuart1",
+        "usart3_usart4_usart5_usart6_lpuart1",
         "cec", 
         "aes_rng"
     ], 
