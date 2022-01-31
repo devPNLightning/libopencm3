@@ -37,6 +37,12 @@
 #if defined(USART4_BASE)
 #define USART4_CR1			USART_CR1(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_CR1			USART_CR1(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_CR1			USART_CR1(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_CR1			USART_CR1(UART4_BASE)
 #endif
@@ -51,6 +57,12 @@
 #define USART3_CR2			USART_CR2(USART3_BASE)
 #if defined(USART4_BASE)
 #define USART4_CR2			USART_CR2(USART4_BASE)
+#endif
+#if defined(USART5_BASE)
+#define USART5_CR2			USART_CR2(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_CR2			USART_CR2(USART6_BASE)
 #endif
 #if defined(UART4_BASE)
 #define UART4_CR2			USART_CR2(UART4_BASE)
@@ -67,6 +79,12 @@
 #if defined(USART4_BASE)
 #define USART4_CR3			USART_CR3(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_CR3			USART_CR3(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_CR3			USART_CR3(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_CR3			USART_CR3(UART4_BASE)
 #endif
@@ -81,6 +99,12 @@
 #define USART3_BRR			USART_BRR(USART3_BASE)
 #if defined(USART4_BASE)
 #define USART4_BRR			USART_BRR(USART4_BASE)
+#endif
+#if defined(USART5_BASE)
+#define USART5_BRR			USART_BRR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_BRR			USART_BRR(USART6_BASE)
 #endif
 #if defined(UART4_BASE)
 #define UART4_BRR			USART_BRR(UART4_BASE)
@@ -97,6 +121,12 @@
 #if defined(USART4_BASE)
 #define USART4_GTPR			USART_GTPR(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_GTPR			USART_GTPR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_GTPR			USART_GTPR(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_GTPR			USART_GTPR(UART4_BASE)
 #endif
@@ -111,6 +141,12 @@
 #define USART3_RTOR			USART_RTOR(USART3_BASE)
 #if defined(USART4_BASE)
 #define USART4_RTOR			USART_RTOR(USART4_BASE)
+#endif
+#if defined(USART5_BASE)
+#define USART5_RTOR			USART_RTOR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_RTOR			USART_RTOR(USART6_BASE)
 #endif
 #if defined(UART4_BASE)
 #define UART4_RTOR			USART_RTOR(UART4_BASE)
@@ -127,6 +163,12 @@
 #if defined(USART4_BASE)
 #define USART4_RQR			USART_RQR(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_RQR			USART_RQR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_RQR			USART_RQR(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_RQR			USART_RQR(UART4_BASE)
 #endif
@@ -141,6 +183,12 @@
 #define USART3_ISR			USART_ISR(USART3_BASE)
 #if defined(USART4_BASE)
 #define USART4_ISR			USART_ISR(USART4_BASE)
+#endif
+#if defined(USART5_BASE)
+#define USART5_ISR			USART_ISR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_ISR			USART_ISR(USART6_BASE)
 #endif
 #if defined(UART4_BASE)
 #define UART4_ISR			USART_ISR(UART4_BASE)
@@ -157,6 +205,12 @@
 #if defined(USART4_BASE)
 #define USART4_ICR			USART_ICR(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_ICR			USART_ICR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_ICR			USART_ICR(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_ICR			USART_ICR(UART4_BASE)
 #endif
@@ -172,6 +226,12 @@
 #if defined(USART4_BASE)
 #define USART4_RDR			USART_RDR(USART4_BASE)
 #endif
+#if defined(USART5_BASE)
+#define USART5_RDR			USART_RDR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_RDR			USART_RDR(USART6_BASE)
+#endif
 #if defined(UART4_BASE)
 #define UART4_RDR			USART_RDR(UART4_BASE)
 #endif
@@ -186,6 +246,12 @@
 #define USART3_TDR			USART_TDR(USART3_BASE)
 #if defined(USART4_BASE)
 #define USART4_TDR			USART_TDR(USART4_BASE)
+#endif
+#if defined(USART5_BASE)
+#define USART5_TDR			USART_TDR(USART5_BASE)
+#endif
+#if defined(USART6_BASE)
+#define USART6_TDR			USART_TDR(USART6_BASE)
 #endif
 #if defined(UART4_BASE)
 #define UART4_TDR			USART_TDR(UART4_BASE)

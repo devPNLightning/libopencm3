@@ -330,6 +330,8 @@
 
 /** @defgroup syscfg_itline29 ITLINE29 interrupt line 29 status register
 @{*/
+#define SYSCFG_ITLINE29_USART6		(1 << 4)
+#define SYSCFG_ITLINE29_USART5		(1 << 3)
 #define SYSCFG_ITLINE29_LPUART1		(1 << 2)
 #define SYSCFG_ITLINE29_USART4		(1 << 1)
 #define SYSCFG_ITLINE29_USART3		(1 << 0)
