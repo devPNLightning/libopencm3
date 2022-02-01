@@ -151,10 +151,15 @@
 #define FLASH_CR_OPTSTRT		(1 << 17)
 /** FLASH_CR_STRT Start **/
 #define FLASH_CR_STRT		(1 << 16)
-
+/** FLASH_CR_BKER Bankselection for erase operation **/
+#define FLASH_CR_BKER		(1 << 13)
+/** FLASH_CR_PNB Pagenumberselection **/
 #define FLASH_CR_PNB_SHIFT		3
 #define FLASH_CR_PNB_MASK		0x3ff
-
+#define FLASH_CR_PNB_BANK1_MAX  0x7F
+#define FLASH_CR_PNB_BANK2_MAX  0x17F
+/** FLASH_CR_BKER Masserase Bank2 **/
+#define FLASH_CR_MER2		(1 << 15)
 /** FLASH_CR_MER Mass erase **/
 #define FLASH_CR_MER			(1 << 2)
 /** FLASH_CR_PER Page erase **/

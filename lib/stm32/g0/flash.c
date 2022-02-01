@@ -81,19 +81,22 @@ void flash_program(uint32_t address, uint8_t *data, uint32_t len)
  */
 void flash_erase_page(uint32_t page)
 {
-	flash_wait_for_last_operation();
+    if (page > FLASH_CR_PNB_BANK2_MAX) return;
 
-	uint32_t reg = FLASH_CR;
-	reg &= ~(FLASH_CR_PNB_MASK << FLASH_CR_PNB_SHIFT);
-	reg |= (page & FLASH_CR_PNB_MASK)  << FLASH_CR_PNB_SHIFT;
-	reg |= FLASH_CR_PER;
-	reg |= FLASH_CR_STRT;
+    flash_wait_for_last_operation();
 
-	FLASH_CR = reg;
+    uint32_t reg = FLASH_CR;
+    reg &= ~(FLASH_CR_PNB_MASK << FLASH_CR_PNB_SHIFT);
+    reg |= (page & FLASH_CR_PNB_MASK)  << FLASH_CR_PNB_SHIFT;
+    reg |= FLASH_CR_PER;
+    reg |= FLASH_CR_STRT;
+    if (page > FLASH_CR_PNB_BANK1_MAX) {
+        reg |= FLASH_CR_BKER;
+    }
 
-	flash_wait_for_last_operation();
+    FLASH_CR = reg;
 
-	FLASH_CR &= ~FLASH_CR_PER;
+    flash_wait_for_last_operation();
 }
 
 /** @brief Erase All FLASH
