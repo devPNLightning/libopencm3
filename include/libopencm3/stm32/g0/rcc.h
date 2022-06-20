@@ -469,7 +469,7 @@
 /** @defgroup rcc_ccipr_rngdiv RNGDIV
 @{*/
 #define RCC_CCIPR_RNGDIV_1		0
-#define RCC_CCIPR_RNGDIV_2 		1
+#define RCC_CCIPR_RNGDIV_2		1
 #define RCC_CCIPR_RNGDIV_4		2
 #define RCC_CCIPR_RNGDIV_8		3
 /**@}*/
@@ -479,7 +479,7 @@
 /** @defgroup rcc_ccipr_rngsel RNGSEL
 @{*/
 #define RCC_CCIPR_RNGSEL_NONE		0
-#define RCC_CCIPR_RNGSEL_HSI16 		1
+#define RCC_CCIPR_RNGSEL_HSI16		1
 #define RCC_CCIPR_RNGSEL_SYSCLK		2
 #define RCC_CCIPR_RNGSEL_PLLQCLK	3
 /**@}*/
@@ -489,7 +489,7 @@
 /** @defgroup rcc_ccipr_tim15sel TIM15SEL
 @{*/
 #define RCC_CCIPR_TIM15SEL_TIMPCLK		0
-#define RCC_CCIPR_TIM15SEL_PLLQCLK 		1
+#define RCC_CCIPR_TIM15SEL_PLLQCLK		1
 /**@}*/
 
 #define RCC_CCIPR_TIM1SEL_MASK		0x1
@@ -497,7 +497,7 @@
 /** @defgroup rcc_ccipr_tim1sel TIM1SEL
 @{*/
 #define RCC_CCIPR_TIM1SEL_TIMPCLK		0
-#define RCC_CCIPR_TIM1SEL_PLLQCLK 		1
+#define RCC_CCIPR_TIM1SEL_PLLQCLK		1
 /**@}*/
 
 #define RCC_CCIPR_LPTIM2SEL_MASK		0x3
@@ -505,8 +505,8 @@
 /** @defgroup rcc_ccipr_lptim2sel LPTIM2SEL LPTIM2 Clock source selection
 @{*/
 #define RCC_CCIPR_LPTIM2SEL_PCLK		0
-#define RCC_CCIPR_LPTIM2SEL_LSI		 	1
-#define RCC_CCIPR_LPTIM2SEL_HSI16 		2
+#define RCC_CCIPR_LPTIM2SEL_LSI			1
+#define RCC_CCIPR_LPTIM2SEL_HSI16		2
 #define RCC_CCIPR_LPTIM2SEL_LSE			3
 /**@}*/
 
@@ -516,7 +516,7 @@
 @{*/
 #define RCC_CCIPR_LPTIM1SEL_PCLK		0
 #define RCC_CCIPR_LPTIM1SEL_LSI			1
-#define RCC_CCIPR_LPTIM1SEL_HSI16 		2
+#define RCC_CCIPR_LPTIM1SEL_HSI16		2
 #define RCC_CCIPR_LPTIM1SEL_LSE			3
 /**@}*/
 
@@ -526,8 +526,8 @@
 @{*/
 #define RCC_CCIPR_I2S1SEL_SYSCLK		0
 #define RCC_CCIPR_I2S1SEL_PLLPLCK		1
-#define RCC_CCIPR_I2S1SEL_HSI16 		2
-#define RCC_CCIPR_I2S1SEL_I2S_CKIN 		2
+#define RCC_CCIPR_I2S1SEL_HSI16			2
+#define RCC_CCIPR_I2S1SEL_I2S_CKIN		3
 /**@}*/
 
 #define RCC_CCIPR_I2C1SEL_MASK		0x3
@@ -536,7 +536,7 @@
 @{*/
 #define RCC_CCIPR_I2C1SEL_PCLK			0
 #define RCC_CCIPR_I2C1SEL_SYSCLK		1
-#define RCC_CCIPR_I2C1SEL_HSI16 		2
+#define RCC_CCIPR_I2C1SEL_HSI16			2
 /**@}*/
 
 #define RCC_CCIPR_LPUART1SEL_MASK		0x3
@@ -545,7 +545,7 @@
 @{*/
 #define RCC_CCIPR_LPUART1SEL_PCLK			0
 #define RCC_CCIPR_LPUART1SEL_SYSCLK			1
-#define RCC_CCIPR_LPUART1SEL_HSI16 			2
+#define RCC_CCIPR_LPUART1SEL_HSI16			2
 #define RCC_CCIPR_LPUART1SEL_LSE			3
 /**@}*/
 
@@ -554,7 +554,7 @@
 /** @defgroup rcc_ccipr_cecsel CECSEL CEC Clock souce selection
 @{*/
 #define RCC_CCIPR_CECSEL_HSI16			0
-#define RCC_CCIPR_CECSEL_LSE 			1
+#define RCC_CCIPR_CECSEL_LSE			1
 /**@}*/
 
 #define RCC_CCIPR_USART2SEL_MASK		0x3
@@ -562,8 +562,8 @@
 /** @defgroup rcc_ccipr_usart2sel USART2SEL USART2 Clock source selection
 @{*/
 #define RCC_CCIPR_USART2SEL_PCLK		0
-#define RCC_CCIPR_USART2SEL_SYSCLK	 	1
-#define RCC_CCIPR_USART2SEL_HSI16 		2
+#define RCC_CCIPR_USART2SEL_SYSCLK		1
+#define RCC_CCIPR_USART2SEL_HSI16		2
 #define RCC_CCIPR_USART2SEL_LSE			3
 /**@}*/
 
@@ -573,7 +573,7 @@
 @{*/
 #define RCC_CCIPR_USART1SEL_PCLK		0
 #define RCC_CCIPR_USART1SEL_SYSCLK		1
-#define RCC_CCIPR_USART1SEL_HSI16 		2
+#define RCC_CCIPR_USART1SEL_HSI16		2
 #define RCC_CCIPR_USART1SEL_LSE			3
 /**@}*/
 /**@}*/

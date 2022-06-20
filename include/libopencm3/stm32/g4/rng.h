@@ -1,8 +1,8 @@
-/** @defgroup lptimer_defines LPTIM Defines
+/** @defgroup rng_defines RNG Defines
  *
- * @ingroup STM32L0xx_defines
+ * @ingroup STM32G4xx_defines
  *
- * @brief <b>libopencm3 Defined Constants and Types for the STM32L0xx Low Power Timer</b>
+ * @brief <b>Defined Constants and Types for the STM32G4xx RNG Control</b>
  *
  * @version 1.0.0
  *
@@ -10,8 +10,6 @@
  *  */
 /*
  * This file is part of the libopencm3 project.
- *
- * Copyright (C) 2019 Guillaume Revaillot <g.revaillot@gmail.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -27,20 +25,16 @@
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef LIBOPENCM3_LPTIMER_H
-#define LIBOPENCM3_LPTIMER_H
 /**@{*/
+#ifndef LIBOPENCM3_RNG_H
+#define LIBOPENCM3_RNG_H
 
-#include <libopencm3/stm32/common/lptimer_common_all.h>
+#include <libopencm3/stm32/common/rng_common_v1.h>
 
-/** @defgroup lptim_reg_base Low Power Timer register base addresses
-@{*/
-#define LPTIM1				LPTIM1_BASE
-/**@}*/
+/* --- RNG_CR values ------------------------------------------------------- */
 
-BEGIN_DECLS
+/** Clock error detection : CED = 0 : Detection Enabled */
+#define RNG_CR_CED		(1 << 5)
 
-END_DECLS
-
-/**@}*/
 #endif
+/**@}*/
