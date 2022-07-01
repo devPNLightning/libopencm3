@@ -326,6 +326,7 @@
 /** @defgroup syscfg_itline28 ITLINE28 interrupt line 28 status register
 @{*/
 #define SYSCFG_ITLINE28_USART2		(1 << 0)
+#define SYSCFG_ITLINE28_LPUART2		(1 << 1)
 /**@}*/
 
 /** @defgroup syscfg_itline29 ITLINE29 interrupt line 29 status register

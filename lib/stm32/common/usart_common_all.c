@@ -80,6 +80,13 @@ void usart_set_baudrate(uint32_t usart, uint32_t baud)
 		return;
 	}
 #endif
+#ifdef LPUART2
+    if (usart == LPUART2) {
+		USART_BRR(usart) = (clock / baud) * 256
+			+ ((clock % baud) * 256 + baud / 2) / baud;
+		return;
+	}
+#endif
 
 	USART_BRR(usart) = (clock + baud / 2) / baud;
 }

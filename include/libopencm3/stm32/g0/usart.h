@@ -44,6 +44,7 @@
 #define USART5				USART5_BASE
 #define USART6				USART6_BASE
 #define LPUART1				LPUART1_BASE
+#define LPUART2				LPUART2_BASE
 /**@}*/
 
 /**@}*/
