@@ -23,9 +23,11 @@
 #include <libopencm3/cm3/common.h>
 
 #if defined(STM32G4)
-#	include <libopencm3/stm32/g4/fdcan.h>
+#include <libopencm3/stm32/g4/fdcan.h>
 #elif defined(STM32H7)
-#	include <libopencm3/stm32/h7/fdcan.h>
+#include <libopencm3/stm32/h7/fdcan.h>
+#elif defined(STM32G0)
+#include <libopencm3/stm32/g0/fdcan.h>
 #endif
 
 /** @addtogroup fdcan_defines
